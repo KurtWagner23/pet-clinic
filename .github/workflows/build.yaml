@@ -20,6 +20,6 @@ jobs:
       - name: Compile, build and push
         run: |
           mvn package
-          docker build -t ghcr.io/KurtWagner23/petclinic:latest .
-          docker login ghcr.io --username KurtWagner23 --password $GITHUB_ACCESSTOKEN ghcr.io
-          docker push ghcr.io/KurtWagner23/petclinic:latest
+          docker build -t ghcr.io/kurtwagner23/petclinic:latest .
+          docker login ghcr.io --username kurtwagner23 --password $GITHUB_ACCESSTOKEN ghcr.io
+          docker push ghcr.io/kurtwagner23/petclinic:latest
